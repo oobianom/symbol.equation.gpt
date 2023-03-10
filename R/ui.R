@@ -15,12 +15,12 @@ r2sym.ui2 <- miniUI::miniPage(
               #recent_panel_ui{width:unset!important;min-height:700px!important;}
               ")),
     shiny::tabsetPanel(id="main_menu_tabs",
-                       shiny::tabPanel("Recent", "tab_recent()",icon=shiny::icon("splotch")),
-                       shiny::tabPanel("Files", "tab_files()",value="panel2", icon = shiny::icon("file")),
-                       shiny::tabPanel("Create/Manage", "tab_setupmanage()",icon = shiny::icon("cogs")),
-                       shiny::tabPanel("Writer", "tab_writer()",icon = shiny::icon("pen-square")),
-                       shiny::tabPanel("Render", "tab_general()",icon = shiny::icon("shipping-fast")),
-                       shiny::tabPanel("How to", "tab_howto()",icon = shiny::icon("question"))
+                       shiny::tabPanel("box", "test",icon=shiny::icon("splotch")),
+                       shiny::tabPanel("equ", "0",value="panel2", icon = shiny::icon("file")),
+                       shiny::tabPanel("sym", "a",icon = shiny::icon("cogs")),
+                       shiny::tabPanel("build", "b",icon = shiny::icon("pen-square")),
+                       shiny::tabPanel("start", "c",icon = shiny::icon("shipping-fast")),
+                       shiny::tabPanel("paste", "d",icon = shiny::icon("question"))
     )
   ),
   miniUI::miniContentPanel(
