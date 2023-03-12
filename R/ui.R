@@ -19,7 +19,7 @@ lib.loc <- function() file.path(find.package(package = "symbols.equations.ui"), 
 
 (nextGenShinyApps::fluidPage(
   # Theme: Select color style from 1-13
-  style = "6",
+  style = "3",
 
   # set background color
   custom.bg.color = "#f5f5f5",
@@ -34,7 +34,7 @@ lib.loc <- function() file.path(find.package(package = "symbols.equations.ui"), 
   # Header: Insert header content using titlePanel ------------
   header = nextGenShinyApps::titlePanel(
     left = "Symbols Interface",
-    right = nextGenShinyApps::actionButton("closeapp", "", icon = shiny::icon("window-close"), style = "pill", bg.type = "primary")
+    right = nextGenShinyApps::actionButton("closeapp", "", style = "pill", bg.type = "danger")
   ),
   shiny::div(
     shiny::selectInput("symbolseqnuicopyinsert", "Copy or Insert When Clicked?", choices = c("Copy to Clipboard" = 1, "Insert in Document" = 2)),
