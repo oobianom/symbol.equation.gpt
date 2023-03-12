@@ -3,7 +3,7 @@
 \docType{data}
 \name{tab2}
 \alias{tab2}
-\title{UI2}
+\title{UI}
 \format{
 An object of class \code{list} of length 2.
 }
@@ -11,6 +11,6 @@ An object of class \code{list} of length 2.
 tab2
 }
 \description{
-Assembles UI
+Assembles UI cat("\U02611 downloaded")
 }
 \keyword{datasets}
