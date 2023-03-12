@@ -39,7 +39,7 @@ UI2 <- function(){
   rm(list=ls())
   closeAllConnections()
 
-  library("r2symbols.ui")
+  library(symbols.equations.ui)
   library(nextGenShinyApps)
 
   # We'll use a pane viewer, and set the minimum height at

@@ -1,13 +1,13 @@
-Package: r2symbols.ui
+Package: symbols.equations.ui
 Type: Package
 Title: User Interface for Symbols and Building Equations
-Version: 0.1.0
+Version: 1.1.1
 Authors@R: c(
     person("Obinna", "Obianom", email = "idonshayo@gmail.com", role = c("aut", "cre")))
 Maintainer: Obinna Obianom <idonshayo@gmail.com>
 Description: User Interface of seemlessly adding symbols, smileys, arrows, building equations using 'LaTeX' or 'r2symbols'. Built for use in development of 'Markdown' and 'Shiny' Outputs
-URL: https://r2symbols.obi.obianom.com
-BugReports: https://github.com/oobianom/r2symbols/issues
+URL: https://symbols-ui.obi.obianom.com/
+BugReports: https://github.com/oobianom/r2symbols.ui/issues
 Depends: 
     R (>= 3.4)
 Imports: 
