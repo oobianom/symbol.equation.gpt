@@ -1,10 +1,3 @@
-#' Test
-#'
-#' TEST
-#'
-#' @export
-
-
-experimental <- function() {
-  print("Test!")
+.onLoad <- function(lib,pkg) {
+  cat("\U02611 Launching symbols UI")
 }

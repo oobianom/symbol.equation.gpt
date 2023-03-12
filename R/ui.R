@@ -1,6 +1,6 @@
 #' UI
 #'
-#' Assembles UI cat("\U02611 downloaded")
+#' Assembles UI
 #'
 #' @export
 #'
