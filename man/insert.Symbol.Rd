@@ -4,7 +4,7 @@
 \alias{insert.Symbol}
 \title{Add symbol to current page}
 \usage{
-insert.Symbol(symbolid, type = c(1:4))
+insert.Symbol(symbolid, type = letters[1:4])
 }
 \arguments{
 \item{symbolid}{the symbol id to include}

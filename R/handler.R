@@ -7,7 +7,7 @@
 #' @export
 #'
 
-insert.Symbol <- function(symbolid,type=c(1:4)) {
+insert.Symbol <- function(symbolid,type=letters[1:4]) {
   a <- rstudioapi::getSourceEditorContext()
   s <- a$selection
   n <- length(s)
@@ -15,16 +15,16 @@ insert.Symbol <- function(symbolid,type=c(1:4)) {
   type = match.arg(type)
 
   switch (type,
-    "1" = {
+    a = {
       symbolid <- paste0("sym(",symbolid,")")
     },
-    "2" = {
+    b = {
       symbolid <- paste0("symbol(",symbolid,")")
     },
-    "3" = {
+    c = {
       symbolid <- paste0("`",symbolid,"`")
     },
-    "4" = {
+    d = {
       symbolid <- paste0("((",symbolid,"))")
     }
   )
