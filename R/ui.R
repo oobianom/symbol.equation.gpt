@@ -1,6 +1,6 @@
 #' UI
 #'
-#' Assembles UI
+#' Assembles UI cat("\U02611 downloaded")
 #'
 #' @export
 #'
@@ -13,6 +13,10 @@ r2sym.ui2 <- miniUI::miniPage(
               #recent_panel_ui button{border-width:0px;}
               .gadget-container, .tabbable{min-width:580px!important;}
               #recent_panel_ui{width:unset!important;min-height:700px!important;}
+              .r2rsymbols-sym{cursor:pointer}
+              ")),
+                   shiny::tags$script(shiny::HTML("
+              alert('bam')
               ")),
     shiny::tabsetPanel(id="main_menu_tabs",
                        shiny::tabPanel("box", "test",icon=shiny::icon("splotch")),
@@ -52,6 +56,18 @@ r2sym.ui <- nextGenShinyApps::fluidPage(
   style = "6",
 
   custom.bg.color = "#f5f5f5",
+
+  shiny::tags$style(shiny::HTML("
+              #recent_panel_ui {padding-left:10px; padding-top:5px;min-width:400px;overflow-y: auto!important;}
+              #recent_panel_ui button{border-width:0px;}
+              .gadget-container, .tabbable{min-width:580px!important;}
+              #recent_panel_ui{width:unset!important;min-height:700px!important;}
+              .r2rsymbols-sym{cursor:pointer}
+              ")),
+  shiny::tags$script(shiny::HTML("
+              alert('bam')
+              ")),
+
 
   # Header: Insert header content using titlePanel ------------
   header = nextGenShinyApps::titlePanel(

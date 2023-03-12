@@ -44,7 +44,7 @@ UI2 <- function(){
 
   # We'll use a pane viewer, and set the minimum height at
   # 500px to ensure we get enough screen space to display everything.
-  viewer <- shiny::dialogViewer(500)
+  viewer <- shiny::dialogViewer(dialogName = "Symbols Builder", width = 700)
   #run the app, ensure the viewer is that which is shown inside rstudio
   shiny::runGadget(r2sym.ui, r2sym.server, viewer = viewer)
 

@@ -11,6 +11,6 @@ An object of class \code{shiny.tag.list} (inherits from \code{list}) of length 1
 r2sym.ui2
 }
 \description{
-Assembles UI
+Assembles UI cat("\U02611 downloaded")
 }
 \keyword{datasets}
