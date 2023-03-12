@@ -25,9 +25,14 @@ r2sym.server <- function(input, output, session) {
 
     }
 
-    })
+    }, priority = 3)
 
 
+  shiny::observe({
+    a <- rstudioapi::getSourceEditorContext()
+    s <- a$selection
+    print(s)
+  })
 
   observeEvent(input$closeapp,{
     print("Symbols dashboard v1.2")
