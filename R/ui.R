@@ -54,7 +54,7 @@ r2sym.ui <- nextGenShinyApps::fluidPage(
     left = "Symbols Interface",
     right = nextGenShinyApps::actionButton("closeapp","",icon = shiny::icon("window-close"),style="pill",bg.type = "primary")),
 shiny::div(
-  shiny::selectInput("sek1","Select this", choices = c("hello","Boo")),
+  shiny::selectInput("sek1","Copy or Insert", choices = c("hello","Boo")),
 shiny::conditionalPanel(
   condition = "input.sek1 == 'Boo'",
                  shiny::selectInput("sek2","Select this", choices = c("hello","B"))
