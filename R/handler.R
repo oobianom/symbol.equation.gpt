@@ -7,7 +7,7 @@
 #' @export
 #'
 
-insert.Symbol <- function(symbolid,type=letters[1:4]) {
+insert.Symbol.Raw <- function(symbolid,type=letters[1:4]) {
 
   type = match.arg(type)
 
@@ -28,4 +28,17 @@ insert.Symbol <- function(symbolid,type=letters[1:4]) {
   a <- rstudioapi::getSourceEditorContext()
   for (s in a$selection)
     rstudioapi::insertText(location = s$range, text = sprintf("%s%s", s$text, symbolid))
+}
+
+
+
+#' Add symbol to current page
+#'
+#' Insert raw symbol to page
+#'
+#' @export
+#'
+insert.Symbol.Rendered <- function(){
+  symbolid <- readClipboard(raw = F)
+  rstudioapi::insertText(symbolid)
 }

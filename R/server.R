@@ -18,19 +18,13 @@ r2sym.server <- function(input, output, session) {
       symid <- as.numeric(input$transmittedSymbol0x)
 
       if(symid > 0){
-        insert.Symbol(symid,type = "a")
+        insert.Symbol.Raw(symid,type = "a")
+        insert.Symbol.Rendered()
       }
 
     }
 
     }, priority = 3)
-
-
-  shiny::observe({
-    a <- rstudioapi::getSourceEditorContext()
-    s <- a$selection
-    print(s)
-  })
 
   observeEvent(input$closeapp,{
     print("Symbols dashboard v1.2")

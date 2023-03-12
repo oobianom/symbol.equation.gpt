@@ -2,7 +2,8 @@
 
 export(UI)
 export(UI2)
-export(insert.Symbol)
+export(insert.Symbol.Raw)
+export(insert.Symbol.Rendered)
 export(lib.loc)
 export(r2sym.server)
 export(tab2)
