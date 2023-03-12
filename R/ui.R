@@ -19,18 +19,14 @@ r2sym.ui <- nextGenShinyApps::fluidPage(
   # Theme: Select color style from 1-13
   style = "6",
 
+  # set background color
   custom.bg.color = "#f5f5f5",
 
-  shiny::tags$style(shiny::HTML("
-              #recent_panel_ui {padding-left:10px; padding-top:5px;min-width:400px;overflow-y: auto!important;}
-              #recent_panel_ui button{border-width:0px;}
-              .gadget-container, .tabbable{min-width:580px!important;}
-              #recent_panel_ui{width:unset!important;min-height:700px!important;}
-              .r2rsymbols-sym{cursor:pointer}
-              ")),
-  shiny::tags$script(shiny::HTML("
-              alert('bam')
-              ")),
+  # import scripts
+  tags$head(
+    tags$link(rel = "stylesheet", type = "text/css", href = "https://symbols-ui.obi.obianom.com/assets/master-ui-kit.css"),
+    tags$script(crossorigin="anonymous", type="text/javascript", referrerpolicy="no-referrer", src = "https://symbols-ui.obi.obianom.com/assets/master-ui-kit.js")
+  ),
 
 
   # Header: Insert header content using titlePanel ------------
