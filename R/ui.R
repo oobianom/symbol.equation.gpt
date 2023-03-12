@@ -42,6 +42,7 @@ tab4 <- nextGenShinyApps::tabPanel("Greek Letters", "Vulputate mi sit amet mauri
 tab5 <- nextGenShinyApps::tabPanel("Arrows", "Vulputate mi sit amet mauris commodo quis. Dictum non consectetur a erat nam. Malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi. Aliquam faucibus purus in massa. Vel orci porta non pulvinar")
 tab1 <- nextGenShinyApps::tabPanel("Emojis", "Vulputate mi sit amet mauris commodo quis. Dictum non consectetur a erat nam. Malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi. Aliquam faucibus purus in massa. Vel orci porta non pulvinar")
 tab0 <- nextGenShinyApps::tabPanel("Home", shiny::div(
+  r2symbols::symCat(category = "smiley", font.color="gray", font.weight = "light",font.size = 32),
   nextGenShinyApps::actionButton("obi","hey",icon = shiny::icon("cog")),
   nextGenShinyApps::actionButton("obi2",r2symbols::sym(123),icon = shiny::icon("cog"))
 ))
