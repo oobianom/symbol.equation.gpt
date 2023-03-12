@@ -55,9 +55,9 @@ r2sym.ui <- nextGenShinyApps::fluidPage(
     right = nextGenShinyApps::actionButton("closeapp", "", icon = shiny::icon("window-close"), style = "pill", bg.type = "primary")
   ),
   shiny::div(
-    shiny::selectInput("symbolseqnui-copy-insert", "Copy or Insert", choices = c("Copy to Clipboard", "Insert in Document")),
+    shiny::selectInput("symbolseqnuicopyinsert", "Copy or Insert", choices = c("Copy to Clipboard", "Insert in Document")),
     shiny::conditionalPanel(
-      condition = "input.symbolseqnui-copy-insert == 'Insert in Document'",
+      condition = "input.symbolseqnuicopyinsert == 'Insert in Document'",
       shiny::div(
         shiny::selectInput("symbolseqnui-insert-type", "Insert type", choices = c("Rmd or Shiny: Insert Code", "Rmd: Insert Code with R chunk","Rmd: Insert Shorthand Code")),
         class = "pl-2"
