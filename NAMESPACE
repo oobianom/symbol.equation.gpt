@@ -2,6 +2,6 @@
 
 export(UI)
 export(UI2)
-export(add.Symbol)
+export(insert.Symbol)
 export(r2sym.server)
 export(tab2)

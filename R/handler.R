@@ -15,16 +15,16 @@ insert.Symbol <- function(symbolid,type=c(1:4)) {
   type = match.arg(type)
 
   switch (type,
-    1 = {
+    "1" = {
       symbolid <- paste0("sym(",symbolid,")")
     },
-    2 = {
+    "2" = {
       symbolid <- paste0("symbol(",symbolid,")")
     },
-    3 = {
+    "3" = {
       symbolid <- paste0("`",symbolid,"`")
     },
-    4 = {
+    "4" = {
       symbolid <- paste0("((",symbolid,"))")
     }
   )

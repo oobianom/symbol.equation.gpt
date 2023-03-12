@@ -11,17 +11,15 @@ r2sym.server <- function(input, output, session) {
   # clear environment
   rm(list = setdiff(ls(), c("input", "output", "session")))
 
-  observeEvent(input$obi2,{
-    print(r2symbols::sym(500))
-  })
-
-
-
 
   shiny::observe({
     if (!is.null(input$transmittedSymbol0x)) {
 
-      print(input$transmittedSymbol0x)
+      symid <- as.numeric(input$transmittedSymbol0x)
+
+      if(symid > 0){
+
+      }
 
     }
 
