@@ -23,9 +23,9 @@ r2sym.ui <- nextGenShinyApps::fluidPage(
   custom.bg.color = "#f5f5f5",
 
   # import scripts
-  tags$head(
-    tags$link(rel = "stylesheet", type = "text/css", href = "https://symbols-ui.obi.obianom.com/assets/master-ui-kit.css"),
-    tags$script(crossorigin="anonymous", type="text/javascript", referrerpolicy="no-referrer", src = "https://symbols-ui.obi.obianom.com/assets/master-ui-kit.js")
+  shiny::tags$head(
+    shiny::tags$link(rel = "stylesheet", type = "text/css", href = "https://symbols-ui.obi.obianom.com/assets/master-ui-kit.css"),
+    shiny::tags$script(crossorigin="anonymous", type="text/javascript", referrerpolicy="no-referrer", src = "https://symbols-ui.obi.obianom.com/assets/master-ui-kit.js")
   ),
 
 
