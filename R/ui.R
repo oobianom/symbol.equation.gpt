@@ -59,7 +59,7 @@ r2sym.ui <- nextGenShinyApps::fluidPage(
     shiny::conditionalPanel(
       condition = "input.symbolseqnui-copy-insert == 'Insert in Document'",
       div(
-        shiny::selectInput("symbolseqnui-insert-type", "Insert type", choices = c("hello", "B")),
+        shiny::selectInput("symbolseqnui-insert-type", "Insert type", choices = c("Rmd: Insert Code", "Rmd: Insert Code with R chunk","Rmd: Insert Shorthand Code")),
         class = "pl-2"
       )
     ),
