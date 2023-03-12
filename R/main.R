@@ -7,18 +7,21 @@
 
 (function(){
 
-  #Prior to starting app, clear console and environment
+  # prior to starting app, clear console and environment
   cat("\014")
   rm(list=ls())
   closeAllConnections()
 
-  library("r2symbols.ui")
-  library(nextGenShinyApps)
+  # library calls
+  require(shiny, quietly = TRUE)
+  require(symbols.equations.ui, quietly = TRUE)
+  require(nextGenShinyApps, quietly = TRUE)
+  require(r2symbols, quietly = TRUE)
 
-  # We'll use a pane viewer, and set the minimum height at
-  # 500px to ensure we get enough screen space to display everything.
+  # declare viewer
   viewer <- shiny::paneViewer(500)
-  #run the app, ensure the viewer is that which is shown inside rstudio
+
+  # run the app
   shiny::runGadget(r2sym.ui, r2sym.server, viewer = viewer)
 
 
@@ -34,18 +37,21 @@
 
 (function(){
 
-  #Prior to starting app, clear console and environment
+  # prior to starting app, clear console and environment
   cat("\014")
   rm(list=ls())
   closeAllConnections()
 
-  library(symbols.equations.ui)
-  library(nextGenShinyApps)
+  # library calls
+  require(shiny, quietly = TRUE)
+  require(symbols.equations.ui, quietly = TRUE)
+  require(nextGenShinyApps, quietly = TRUE)
+  require(r2symbols, quietly = TRUE)
 
-  # We'll use a pane viewer, and set the minimum height at
-  # 500px to ensure we get enough screen space to display everything.
+  # declare viewer
   viewer <- shiny::dialogViewer(dialogName = "Symbols Builder", width = 700)
-  #run the app, ensure the viewer is that which is shown inside rstudio
+
+  # run the app
   shiny::runGadget(r2sym.ui, r2sym.server, viewer = viewer)
 
 
