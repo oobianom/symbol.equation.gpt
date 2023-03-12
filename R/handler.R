@@ -7,7 +7,7 @@
 #' @export
 #'
 
-symbolid <- function(symbolid,type=c(1:4)) {
+add.Symbol <- function(symbolid,type=c(1:4)) {
   a <- rstudioapi::getSourceEditorContext()
   s <- a$selection
   n <- length(s)
