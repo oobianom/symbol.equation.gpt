@@ -53,8 +53,14 @@ r2sym.ui <- nextGenShinyApps::fluidPage(
   header = nextGenShinyApps::titlePanel(
     left = "Symbols Interface",
     right = nextGenShinyApps::actionButton("closeapp","",icon = shiny::icon("window-close"),style="pill",bg.type = "primary")),
-
+shiny::div(
+  shiny::selectInput("sek1","Select this", choices = c("hello","Boo")),
+shiny::conditionalPanel(
+  condition = "input.sek1 == 'Boo'",
+                 shiny::selectInput("sek2","Select this", choices = c("hello","B"))
+                 ), class = "d-flex"),
   nextGenShinyApps::tabsetPanel(
+
     tab0,
     tab1,
     tab2,

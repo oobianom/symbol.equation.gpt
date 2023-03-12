@@ -19,7 +19,6 @@ r2sym.server <- function(input, output, session) {
 
       if(symid > 0){
         insert.Symbol.Raw(symid,type = "a")
-        insert.Symbol.Rendered()
       }
 
     }
