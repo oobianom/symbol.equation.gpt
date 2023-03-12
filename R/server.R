@@ -18,7 +18,7 @@ r2sym.server <- function(input, output, session) {
       symid <- as.numeric(input$transmittedSymbol0x)
 
       if(symid > 0){
-        insert.Symbol(symid,type = 1)
+        insert.Symbol(symid,type = "a")
       }
 
     }

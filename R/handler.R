@@ -8,9 +8,6 @@
 #'
 
 insert.Symbol <- function(symbolid,type=letters[1:4]) {
-  a <- rstudioapi::getSourceEditorContext()
-  s <- a$selection
-  n <- length(s)
 
   type = match.arg(type)
 
@@ -28,13 +25,7 @@ insert.Symbol <- function(symbolid,type=letters[1:4]) {
       symbolid <- paste0("((",symbolid,"))")
     }
   )
-  # if no text is selected
-  if (n == 1L && nchar(s[[1L]]$text) == 0L) {
-    pos <- s[[1L]]$range$start
-    pos[2L] <- 1
-    rstudioapi::insertText(location = pos, text = symbolid)
-  } else {
-    for (i in s)
-      rstudioapi::insertText(location = i$range$start, text = symbolid)
-  }
+  a <- rstudioapi::getSourceEditorContext()
+  for (s in a$selection)
+    rstudioapi::insertText(location = s$range, text = sprintf("%s%s", s$text, symbolid))
 }
