@@ -1,18 +1,37 @@
+#' Instructions Document Loader
+#'
+#' Load Instruction document
+#'
+#' @export
+#'
+
+lib.loc <- function() file.path(find.package(package = "symbols.equations.ui"), "lib")
+
+
+
 #' UI
 #'
 #' Assembles UI
 #'
 #' @export
 #'
-tab2 <- nextGenShinyApps::tabPanel("Equations", "Convallis aenean et tortor at risus. Enim neque volutpat ac tincidunt vitae semper quis lectus nulla. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc.")
-tab3 <- nextGenShinyApps::tabPanel("Symbols", "Eu consequat ac felis donec et odio pellentesque. Egestas pretium aenean pharetra magna ac placerat. Eget velit aliquet sagittis id consectetur purus ut. Aliquet enim tortor at auctor urna nunc id cursus metus. Semper viverra nam libero justo laoreet sit amet.")
-tab4 <- nextGenShinyApps::tabPanel("Greek Letters", "Vulputate mi sit amet mauris commodo quis. Dictum non consectetur a erat nam. Malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi. Aliquam faucibus purus in massa. Vel orci porta non pulvinar")
-tab5 <- nextGenShinyApps::tabPanel("Arrows", "Vulputate mi sit amet mauris commodo quis. Dictum non consectetur a erat nam. Malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi. Aliquam faucibus purus in massa. Vel orci porta non pulvinar")
-tab1 <- nextGenShinyApps::tabPanel("Emojis", "Vulputate mi sit amet mauris commodo quis. Dictum non consectetur a erat nam. Malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi. Aliquam faucibus purus in massa. Vel orci porta non pulvinar")
+tab2 <- nextGenShinyApps::tabPanel("Equations", shiny::div(
+  r2symbols::symCat(category = "smiley", font.color="gray", font.weight = "light",font.size = 32)
+))
+tab3 <- nextGenShinyApps::tabPanel("Symbols", shiny::div(
+  r2symbols::symCat(category = "smiley", font.color="gray", font.weight = "light",font.size = 32)
+))
+tab4 <- nextGenShinyApps::tabPanel("Greek Letters", shiny::div(
+  r2symbols::symCat(category = "smiley", font.color="gray", font.weight = "light",font.size = 32)
+))
+tab5 <- nextGenShinyApps::tabPanel("Arrows", shiny::div(
+  r2symbols::symCat(category = "smiley", font.color="gray", font.weight = "light",font.size = 32)
+))
+tab1 <- nextGenShinyApps::tabPanel("Emojis", shiny::div(
+  r2symbols::symCat(category = "smiley", font.color="gray", font.weight = "light",font.size = 32)
+))
 tab0 <- nextGenShinyApps::tabPanel("Home", shiny::div(
-  r2symbols::symCat(category = "smiley", font.color="gray", font.weight = "light",font.size = 32),
-  shiny::hr(),
-  nextGenShinyApps::actionButton("obi","hey",icon = shiny::icon("plus"))
+  shiny::withMathJax(shiny::includeMarkdown(file.path(lib.loc(),"introduction.md")))
 ))
 
 r2sym.ui <- nextGenShinyApps::fluidPage(
@@ -45,4 +64,6 @@ r2sym.ui <- nextGenShinyApps::fluidPage(
     justified = TRUE
   )
 )
+
+
 

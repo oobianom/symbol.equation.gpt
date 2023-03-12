@@ -3,5 +3,6 @@
 export(UI)
 export(UI2)
 export(insert.Symbol)
+export(lib.loc)
 export(r2sym.server)
 export(tab2)
