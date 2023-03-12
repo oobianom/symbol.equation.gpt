@@ -25,14 +25,14 @@ UI <- function(){
 }
 
 
-#' Main Widget Helper for symbols
+#' Main Widget Helper for symbols viewer2
 #'
 #' Assembles the interface for the symbols builder
 #'
 #' @export
 #'
 
-UI <- function(){
+UI2 <- function(){
 
   #Prior to starting app, clear console and environment
   cat("\014")
@@ -44,7 +44,7 @@ UI <- function(){
 
   # We'll use a pane viewer, and set the minimum height at
   # 500px to ensure we get enough screen space to display everything.
-  viewer <- shiny::paneViewer(500)
+  viewer <- shiny::dialogViewer(500)
   #run the app, ensure the viewer is that which is shown inside rstudio
   shiny::runGadget(r2sym.ui, r2sym.server, viewer = viewer)
 

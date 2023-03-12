@@ -3,7 +3,7 @@ Description: Include Symbols and Make equations
 Binding: UI
 Interactive: true
 
-Name: Symbols and Equations View2
+Name: View2
 Description: Include Symbols and Make equations using viewer2
-Binding: UI
+Binding: UI2
 Interactive: true
