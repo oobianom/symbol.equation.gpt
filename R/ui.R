@@ -4,42 +4,6 @@
 #'
 #' @export
 #'
-
-r2sym.ui2 <- miniUI::miniPage(
-  miniUI::gadgetTitleBar(shiny::HTML("r2symbols User Interface v1.01")),
-  shiny::mainPanel(id='recent_panel_ui',
-                   shiny::tags$style(shiny::HTML("
-              #recent_panel_ui {padding-left:10px; padding-top:5px;min-width:400px;overflow-y: auto!important;}
-              #recent_panel_ui button{border-width:0px;}
-              .gadget-container, .tabbable{min-width:580px!important;}
-              #recent_panel_ui{width:unset!important;min-height:700px!important;}
-              .r2rsymbols-sym{cursor:pointer}
-              ")),
-                   shiny::tags$script(shiny::HTML("
-              alert('bam')
-              ")),
-    shiny::tabsetPanel(id="main_menu_tabs",
-                       shiny::tabPanel("box", "test",icon=shiny::icon("splotch")),
-                       shiny::tabPanel("equ", "0",value="panel2", icon = shiny::icon("file")),
-                       shiny::tabPanel("sym", "a",icon = shiny::icon("cogs")),
-                       shiny::tabPanel("build", "b",icon = shiny::icon("pen-square")),
-                       shiny::tabPanel("start", "c",icon = shiny::icon("shipping-fast")),
-                       shiny::tabPanel("paste", "d",icon = shiny::icon("question"))
-    )
-  ),
-  miniUI::miniContentPanel(
-    shiny::uiOutput("time")
-      )
-    )
-
-
-
-#' UI2
-#'
-#' Assembles UI
-#'
-#' @export
-#'
 tab2 <- nextGenShinyApps::tabPanel("Equations", "Convallis aenean et tortor at risus. Enim neque volutpat ac tincidunt vitae semper quis lectus nulla. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc.")
 tab3 <- nextGenShinyApps::tabPanel("Symbols", "Eu consequat ac felis donec et odio pellentesque. Egestas pretium aenean pharetra magna ac placerat. Eget velit aliquet sagittis id consectetur purus ut. Aliquet enim tortor at auctor urna nunc id cursus metus. Semper viverra nam libero justo laoreet sit amet.")
 tab4 <- nextGenShinyApps::tabPanel("Greek Letters", "Vulputate mi sit amet mauris commodo quis. Dictum non consectetur a erat nam. Malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi. Aliquam faucibus purus in massa. Vel orci porta non pulvinar")
