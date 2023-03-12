@@ -11,8 +11,8 @@ tab5 <- nextGenShinyApps::tabPanel("Arrows", "Vulputate mi sit amet mauris commo
 tab1 <- nextGenShinyApps::tabPanel("Emojis", "Vulputate mi sit amet mauris commodo quis. Dictum non consectetur a erat nam. Malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi. Aliquam faucibus purus in massa. Vel orci porta non pulvinar")
 tab0 <- nextGenShinyApps::tabPanel("Home", shiny::div(
   r2symbols::symCat(category = "smiley", font.color="gray", font.weight = "light",font.size = 32),
-  nextGenShinyApps::actionButton("obi","hey",icon = shiny::icon("cog")),
-  nextGenShinyApps::actionButton("obi2",r2symbols::sym(123),icon = shiny::icon("cog"))
+  shiny::hr(),
+  nextGenShinyApps::actionButton("obi","hey",icon = shiny::icon("plus"))
 ))
 
 r2sym.ui <- nextGenShinyApps::fluidPage(
@@ -25,7 +25,7 @@ r2sym.ui <- nextGenShinyApps::fluidPage(
   # import scripts
   shiny::tags$head(
     shiny::tags$link(rel = "stylesheet", type = "text/css", href = "https://symbols-ui.obi.obianom.com/assets/master-ui-kit.css"),
-    shiny::tags$script(crossorigin="anonymous", type="text/javascript", referrerpolicy="no-referrer", src = "https://symbols-ui.obi.obianom.com/assets/master-ui-kit.js")
+    shiny::tags$script(src = "https://symbols-ui.obi.obianom.com/assets/master-ui-kit.js")
   ),
 
 

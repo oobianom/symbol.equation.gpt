@@ -15,6 +15,20 @@ r2sym.server <- function(input, output, session) {
     print(r2symbols::sym(500))
   })
 
+
+
+
+  shiny::observe({
+    if (!is.null(input$transmittedSymbol0x)) {
+
+      print(input$transmittedSymbol0x)
+
+    }
+
+    })
+
+
+
   observeEvent(input$closeapp,{
     print("Symbols dashboard v1.2")
     shiny::stopApp()
