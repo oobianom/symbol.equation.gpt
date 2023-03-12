@@ -6,7 +6,7 @@
 #'
 
 
-r2sym.server <- function(input, output, session) {
+(function(input, output, session) {
 
   # clear environment
   rm(list = setdiff(ls(), c("input", "output", "session")))
@@ -14,11 +14,14 @@ r2sym.server <- function(input, output, session) {
 
   shiny::observe({
     if (!is.null(input$transmittedSymbol0x)) {
-
-      symid <- as.numeric(input$transmittedSymbol0x)
+print(input$transmittedSymbol0x)
+      print("------")
+      symidcomb <- strsplit(input$transmittedSymbol0x,"--")[[1]]
+      print(symidcomb)
+      symid <- as.numeric(symidcomb[1])
 
       if(symid > 0){
-        insert.Symbol.Raw(symid,type = "a")
+        insert.Symbol.Raw(symid,type = symidcomb[2])
       }
 
     }
@@ -35,7 +38,7 @@ r2sym.server <- function(input, output, session) {
   cat("\014")
 
 
-}
+}) -> r2sym.server
 
 
 

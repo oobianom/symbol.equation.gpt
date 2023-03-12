@@ -15,27 +15,9 @@ lib.loc <- function() file.path(find.package(package = "symbols.equations.ui"), 
 #'
 #' @export
 #'
-tab2 <- nextGenShinyApps::tabPanel("Equations", shiny::div(
-  r2symbols::symKey(keyword = "sign", font.color = "gray", font.weight = "light", font.size = 32)
-))
-tab3 <- nextGenShinyApps::tabPanel("Symbols", shiny::div(
-  r2symbols::symCat(category = "symbol", font.color = "gray", font.weight = "light", font.size = 32)
-))
-tab4 <- nextGenShinyApps::tabPanel("Greek Letters", shiny::div(
-  r2symbols::symCat(category = "mixed", font.color = "gray", font.weight = "light", font.size = 32)
-))
-tab5 <- nextGenShinyApps::tabPanel("Arrows", shiny::div(
-  r2symbols::symCat(category = "arrows", font.color = "gray", font.weight = "light", font.size = 32)
-))
-tab1 <- nextGenShinyApps::tabPanel("Emojis", shiny::div(
-  r2symbols::symCat(category = "smiley", font.color = "gray", font.weight = "light", font.size = 32)
-))
-tab0 <- nextGenShinyApps::tabPanel("Home", shiny::div(
-  # shiny::withMathJax(shiny::includeMarkdown(file.path(lib.loc(),"introduction.md")))
-  shiny::withMathJax(shiny::includeMarkdown("https://symbols-ui.obi.obianom.com/assets/introduction.md"))
-))
 
-r2sym.ui <- nextGenShinyApps::fluidPage(
+
+(nextGenShinyApps::fluidPage(
   # Theme: Select color style from 1-13
   style = "6",
 
@@ -55,16 +37,17 @@ r2sym.ui <- nextGenShinyApps::fluidPage(
     right = nextGenShinyApps::actionButton("closeapp", "", icon = shiny::icon("window-close"), style = "pill", bg.type = "primary")
   ),
   shiny::div(
-    shiny::selectInput("symbolseqnuicopyinsert", "Copy or Insert", choices = c("Copy to Clipboard", "Insert in Document")),
+    shiny::selectInput("symbolseqnuicopyinsert", "Copy or Insert When Clicked?", choices = c("Copy to Clipboard" = 1, "Insert in Document" = 2)),
     shiny::conditionalPanel(
-      condition = "input.symbolseqnuicopyinsert == 'Insert in Document'",
+      condition = "input.symbolseqnuicopyinsert == '2'",
       shiny::div(
-        shiny::selectInput("symbolseqnui-insert-type", "Insert type", choices = c("Rmd or Shiny: Insert Code", "Rmd: Insert Code with R chunk","Rmd: Insert Shorthand Code")),
+        shiny::selectInput("symbolseqnuiinserttype", "Insert Type", choices = c("Rmd or Shiny: Insert Code"="a", "Rmd: Insert Code with R chunk"="b","Rmd: Insert Shorthand Code"="c")),
         class = "pl-2"
       )
     ),
-    class = "d-flex"
+    class = "d-flex align-middle"
   ),
+  shiny::div(class="clipboardcopytextout text-success mb-2"),
   nextGenShinyApps::tabsetPanel(
 
     tab0,
@@ -76,4 +59,4 @@ r2sym.ui <- nextGenShinyApps::fluidPage(
     type = "pills",
     justified = TRUE
   )
-)
+)) -> r2sym.ui

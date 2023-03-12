@@ -5,7 +5,7 @@
 #' @export
 #'
 
-UI <- function(){
+(function(){
 
   #Prior to starting app, clear console and environment
   cat("\014")
@@ -22,7 +22,7 @@ UI <- function(){
   shiny::runGadget(r2sym.ui, r2sym.server, viewer = viewer)
 
 
-}
+}) -> UI
 
 
 #' Main Widget Helper for symbols viewer2
@@ -32,7 +32,7 @@ UI <- function(){
 #' @export
 #'
 
-UI2 <- function(){
+(function(){
 
   #Prior to starting app, clear console and environment
   cat("\014")
@@ -49,4 +49,4 @@ UI2 <- function(){
   shiny::runGadget(r2sym.ui, r2sym.server, viewer = viewer)
 
 
-}
+}) -> UI2
