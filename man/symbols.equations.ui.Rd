@@ -6,7 +6,7 @@
 \alias{symbols.equations.ui-package}
 \title{symbols.equations.ui}
 \description{
-User Interface of seemlessly adding symbols, smileys, arrows, building equations using 'LaTeX' or 'r2symbols'. Built for use in development of 'Markdown' and 'Shiny' Outputs
+User Interface of seemlessly adding symbols, smileys, arrows, building equations using 'LaTeX' or 'r2symbols'. Built for use in development of 'Markdown' and 'Shiny' Outputs.
 }
 \seealso{
 Useful links:
