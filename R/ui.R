@@ -33,7 +33,7 @@ lib.loc <- function() file.path(find.package(package = "symbols.equations.ui"), 
 
   # Header: Insert header content using titlePanel ------------
   header = nextGenShinyApps::titlePanel(
-    left = "Symbols Interface",
+    left = "Symbols and Equations Interface",
     right = nextGenShinyApps::actionButton("closeapp", "", style = "pill", bg.type = "danger")
   ),
   shiny::div(
