@@ -34,7 +34,7 @@ lib.loc <- function() file.path(find.package(package = "symbols.equations.ui"), 
   # Header: Insert header content using titlePanel ------------
   header = nextGenShinyApps::titlePanel(
     left = "Symbols and Equations Interface",
-    right = nextGenShinyApps::actionButton("closeapp", "", style = "pill", bg.type = "danger")
+    right = nextGenShinyApps::actionButton("closeapp", "", icon = shiny::icon("window-closed"), style = "pill", bg.type = "danger", size  = "s")
   ),
   shiny::div(
     shiny::selectInput("symbolseqnuicopyinsert", "Copy or Insert When Clicked?", choices = c("Copy to Clipboard" = 1, "Insert in Document" = 2)),
