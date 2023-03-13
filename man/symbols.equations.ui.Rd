@@ -12,7 +12,7 @@ User Interface of seemlessly adding symbols, smileys, arrows, building equations
 Useful links:
 \itemize{
   \item \url{https://symbols-ui.obi.obianom.com/}
-  \item Report bugs at \url{https://github.com/oobianom/r2symbols.ui/issues}
+  \item Report bugs at \url{https://github.com/oobianom/r2symbols.ui/issues/}
 }
 
 }
