@@ -9,7 +9,7 @@
 
 # tabs in the tabset
 tab2 <- nextGenShinyApps::tabPanel("Equations", shiny::div(
-  r2symbols::symKey(keyword = "sign", font.color = "gray", font.weight = "light", font.size = 32)
+  shiny::tags$textarea(class='mathdoxformula2'),
 ))
 tab3 <- nextGenShinyApps::tabPanel("Symbols", shiny::div(
   r2symbols::symCat(category = "symbol", font.color = "gray", font.weight = "light", font.size = 32)

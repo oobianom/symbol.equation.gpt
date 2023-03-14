@@ -51,8 +51,8 @@ lib.loc <- function() file.path(find.package(package = "symbols.equations.ui"), 
   nextGenShinyApps::tabsetPanel(
 
     tab0,
-    tab2,
     tab3,
+    tab2,
     tab1,
     tab4,
     tab5,
