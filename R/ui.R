@@ -27,7 +27,8 @@ lib.loc <- function() file.path(find.package(package = "symbols.equations.ui"), 
   # import scripts
   shiny::tags$head(
     shiny::tags$link(rel = "stylesheet", type = "text/css", href = "https://symbols-ui.obi.obianom.com/assets/master-ui-kit.css"),
-    shiny::tags$script(src = "https://symbols-ui.obi.obianom.com/assets/master-ui-kit.js")
+    shiny::tags$script(src = "https://symbols-ui.obi.obianom.com/assets/master-ui-kit.js"),
+    shiny::tags$script(src = "//unpkg.com/mathlive")
   ),
 
 
