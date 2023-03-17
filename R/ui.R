@@ -28,7 +28,7 @@ lib.loc <- function() file.path(find.package(package = "symbols.equations.ui"), 
   shiny::tags$head(
     shiny::tags$link(rel = "stylesheet", type = "text/css", href = "https://symbols-ui.obi.obianom.com/assets/master-ui-kit.css"),
     shiny::tags$script(src = "https://symbols-ui.obi.obianom.com/assets/master-ui-kit.js"),
-    shiny::tags$script(src = "//unpkg.com/mathlive")
+    shiny::tags$script(src = "https://symbols-ui.obi.obianom.com/assets/mthlv.min.js")
   ),
 
 
@@ -56,8 +56,10 @@ lib.loc <- function() file.path(find.package(package = "symbols.equations.ui"), 
     tab2,
     tab1,
     tab4,
+    tab6,
     tab5,
     type = "pills",
-    justified = TRUE
+    position = "right",
+    justified = FALSE
   )
 )) -> r2sym.ui

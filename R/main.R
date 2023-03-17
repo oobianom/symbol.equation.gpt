@@ -19,7 +19,7 @@
   require(r2symbols, quietly = TRUE)
 
   # declare viewer
-  viewer <- shiny::paneViewer(500)
+  shiny::paneViewer(500) -> viewer
 
   # run the app
   shiny::runGadget(r2sym.ui, r2sym.server, viewer = viewer)
@@ -49,7 +49,7 @@
   require(r2symbols, quietly = TRUE)
 
   # declare viewer
-  viewer <- shiny::dialogViewer(dialogName = "Symbols and Equations Builder", width = 700)
+  shiny::dialogViewer(dialogName = "Symbols and Equations Builder", width = 850, height = 750) -> viewer
 
   # run the app
   shiny::runGadget(r2sym.ui, r2sym.server, viewer = viewer)
