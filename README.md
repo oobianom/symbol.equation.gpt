@@ -4,9 +4,8 @@
 
 [![CRAN\_Status\_Badge](https://img.shields.io/badge/rPkgNet-published-orange)](https://rnetwork.obi.obianom.com/package/symbol.equation.ui) <img src="https://rpkg.net/pub-age/symbol.equation.ui"> [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/symbol.equation.ui)](https://cran.r-project.org/package=symbol.equation.ui) [![](https://cranlogs.r-pkg.org/badges/symbol.equation.ui)](https://cran.r-project.org/package=symbol.equation.ui) [![](https://cranlogs.r-pkg.org/badges/grand-total/symbol.equation.ui)](https://cran.r-project.org/package=symbol.equation.ui)
 
-```
-install.packages("symbol.equation.ui")
-```
+### install.packages("symbol.equation.ui")
+
 
 ### Launch User Interface from RStudio Addins
 
