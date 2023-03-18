@@ -17,11 +17,11 @@ install.packages("symbol.equation.ui")
 
 #### User Interface Screenshot - symbols
 
-![](https://symbols-ui.obi.obianom.com/assets/equationrpkg2.png)
+![](https://symbols-ui.obi.obianom.com/assets/equationrpkg3.png)
 
 #### User Interface Screenshot - smiley
 
-![](https://symbols-ui.obi.obianom.com/assets/equationrpkg3.png)
+![](https://symbols-ui.obi.obianom.com/assets/equationrpkg2.png)
 
 
 
