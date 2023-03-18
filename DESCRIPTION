@@ -5,7 +5,7 @@ Version: 1.1.1
 Authors@R: c(
     person("Obinna", "Obianom", email = "idonshayo@gmail.com", role = c("aut", "cre")))
 Maintainer: Obinna Obianom <idonshayo@gmail.com>
-Description: User Interface of seemlessly adding symbols, smileys, arrows, building equations using 'LaTeX' or 'r2symbols'. Built for use in development of 'Markdown' and 'Shiny' Outputs.
+Description: User Interface for adding symbols, smileys, arrows, building equations using 'LaTeX' or 'r2symbols'. Built for use in development of 'Markdown' and 'Shiny' Outputs.
 License: MIT + file LICENSE
 URL: https://symbols-ui.obi.obianom.com/
 BugReports: https://github.com/oobianom/r2symbols.ui/issues/
@@ -18,7 +18,8 @@ Imports:
     nextGenShinyApps,
     r2symbols,
     shinyStorePlus,
-    rstudioapi
+    rstudioapi,
+    markdown
 Suggests: 
     rmarkdown,
     knitr

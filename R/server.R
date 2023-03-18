@@ -7,8 +7,10 @@
 #' @param session app session
 #'
 #' @examples
+#' \dontrun{
 #' if(interactive()){
 #' r2sym.server(input, output, session)
+#' }
 #' }
 #'
 #' @export

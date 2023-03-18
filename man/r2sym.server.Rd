@@ -17,8 +17,10 @@ r2sym.server(input, output, session)
 Assembles Server function for the user interface
 }
 \examples{
+\dontrun{
 if(interactive()){
 r2sym.server(input, output, session)
+}
 }
 
 }
