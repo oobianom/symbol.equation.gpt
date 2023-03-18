@@ -10,7 +10,13 @@ An object of class \code{shiny.tag} of length 3.
 \usage{
 r2sym.ui
 }
+\value{
+HTML for user interface container for the builder
+}
 \description{
 Assembles UI for the application
+}
+\examples{
+r2sym.ui
 }
 \keyword{datasets}

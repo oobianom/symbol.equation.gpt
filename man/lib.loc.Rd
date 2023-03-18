@@ -6,6 +6,12 @@
 \usage{
 lib.loc()
 }
+\value{
+library location
+}
 \description{
 Load library path for package
+}
+\examples{
+lib.loc()
 }
