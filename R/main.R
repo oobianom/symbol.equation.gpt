@@ -2,6 +2,10 @@
 #'
 #' Assembles the interface for the symbols builder
 #'
+#' @return user interface for the builder
+#'
+#' @examples
+#' symbol.equation.UI()
 #' @export
 #'
 
@@ -33,6 +37,10 @@
 #'
 #' Assembles the interface for the symbols builder
 #'
+#' @return user interface for the builder in modal
+#'
+#' @examples
+#' symbol.equation.UI2()
 #' @export
 #'
 

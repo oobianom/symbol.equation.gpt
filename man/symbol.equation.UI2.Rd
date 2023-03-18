@@ -6,6 +6,12 @@
 \usage{
 symbol.equation.UI2()
 }
+\value{
+user interface for the builder in modal
+}
 \description{
 Assembles the interface for the symbols builder
+}
+\examples{
+symbol.equation.UI2()
 }
