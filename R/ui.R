@@ -2,6 +2,10 @@
 #'
 #' Load library path for package
 #'
+#' @return library location
+#'
+#' @examples
+#' lib.loc()
 #' @export
 #'
 
@@ -13,6 +17,10 @@ lib.loc <- function() file.path(find.package(package = "symbol.equation.ui"), "l
 #'
 #' Assembles UI for the application
 #'
+#' @return HTML for user interface container for the builder
+#'
+#' @examples
+#' r2sym.ui
 #' @export
 #'
 

@@ -8,7 +8,7 @@
 #'
 #' @examples
 #' if(interactive()){
-#' r2sym.server()
+#' r2sym.server(input, output, session)
 #' }
 #'
 #' @export
