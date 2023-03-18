@@ -5,8 +5,20 @@
 [![CRAN\_Status\_Badge](https://img.shields.io/badge/rPkgNet-published-orange)](https://rnetwork.obi.obianom.com/package/r2symbols) <img src="https://rpkg.net/pub-age/r2symbols"> [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/r2symbols)](https://cran.r-project.org/package=r2symbols) [![](https://cranlogs.r-pkg.org/badges/r2symbols)](https://cran.r-project.org/package=r2symbols) [![](https://cranlogs.r-pkg.org/badges/grand-total/r2symbols)](https://cran.r-project.org/package=r2symbols)
 
 
+### Launch User Interface from RStudio Addins
+
+#### User Interface Screenshot - equations
+
 ![](https://symbols-ui.obi.obianom.com/equationrpkg1.png)
 
+
+#### User Interface Screenshot - symbols
+
+![](https://symbols-ui.obi.obianom.com/equationrpkg2.png)
+
+#### User Interface Screenshot - smiley
+
+![](https://symbols-ui.obi.obianom.com/equationrpkg3.png)
 
 
 
@@ -14,10 +26,20 @@
 
 First, install and load...
 
-```{r eval=F}
-install.packages("r2symbols")
+```
+install.packages("symbol.equation.ui")
 
-library("r2symbols")
+library("symbol.equation.ui")
+
+# Launch 1
+
+# Go to "Addins" in RStudio, and click on "Symbols and Equations"
+
+# Launch 2: from console
+
+symbol.equation.UI2()
+
+# lUCH
 
 ```
 
