@@ -2,10 +2,10 @@
 % Please edit documentation in R/ui.R
 \name{lib.loc}
 \alias{lib.loc}
-\title{Instructions Document Loader}
+\title{Library path loader}
 \usage{
 lib.loc()
 }
 \description{
-Load Instruction document
+Load library path for package
 }

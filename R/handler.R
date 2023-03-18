@@ -4,6 +4,11 @@
 #' @param symbolid the symbol id to include
 #' @param type type of inclusion
 #'
+#' @return pastes copied symbol code into document
+#'
+#' @examples
+#' insert.Symbol.Raw("sample copied")sym(sample copied)
+#' insert.Symbol.Raw("rpkg.net","a")
 #' @export
 #'
 
@@ -32,12 +37,15 @@ insert.Symbol.Raw <- function(symbolid, type = letters[1:4]) {
 
 
 
-#' Paste from clipboard
+#' Paste items from clipboard
 #'
 #' Insert copied item from clipboard
 #'
-#' @export
+#' @return pastes copied items into current cursor position
 #'
+#' @examples
+#' insert.copied
+#' @export
 insert.copied <- function() {
   symbolid <- readClipboard(raw = F)
   rstudioapi::insertText(symbolid)

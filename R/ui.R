@@ -1,6 +1,6 @@
-#' Instructions Document Loader
+#' Library path loader
 #'
-#' Load Instruction document
+#' Load library path for package
 #'
 #' @export
 #'
