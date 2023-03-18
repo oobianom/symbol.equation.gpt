@@ -1,9 +1,9 @@
 Name: Symbols and Equations (Viewer)
 Description: Include Symbols and Make equations
-Binding: UI
+Binding: symbol.equation.UI
 Interactive: true
 
 Name: Symbols and Equations (Modal)
 Description: Include Symbols and Make equations using viewer2
-Binding: UI2
+Binding: symbol.equation.UI2
 Interactive: true
