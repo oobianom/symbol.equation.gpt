@@ -31,15 +31,17 @@ install.packages("symbol.equation.ui")
 
 library("symbol.equation.ui")
 
-# Launch 1
+# Launch 1: from Addins
 
 # Go to "Addins" in RStudio, and click on "Symbols and Equations"
 
 # Launch 2: from console
 
-symbol.equation.UI2()
+symbol.equation.UI()
 
-# lUCH
+# Launch 3: from console
+
+symbol.equation.UI2()
 
 ```
 
