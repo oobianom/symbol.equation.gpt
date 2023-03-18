@@ -44,7 +44,7 @@ insert.Symbol.Raw <- function(symbolid, type = letters[1:4]) {
 #' @return pastes copied items into current cursor position
 #'
 #' @examples
-#' insert.copied
+#' insert.copied()
 #' @export
 insert.copied <- function() {
   symbolid <- readClipboard(raw = F)

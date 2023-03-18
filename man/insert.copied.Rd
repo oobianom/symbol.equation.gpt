@@ -2,10 +2,16 @@
 % Please edit documentation in R/handler.R
 \name{insert.copied}
 \alias{insert.copied}
-\title{Paste from clipboard}
+\title{Paste items from clipboard}
 \usage{
 insert.copied()
 }
+\value{
+pastes copied items into current cursor position
+}
 \description{
 Insert copied item from clipboard
+}
+\examples{
+insert.copied()
 }

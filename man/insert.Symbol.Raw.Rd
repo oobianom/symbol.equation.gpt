@@ -11,6 +11,13 @@ insert.Symbol.Raw(symbolid, type = letters[1:4])
 
 \item{type}{type of inclusion}
 }
+\value{
+pastes copied symbol code into document
+}
 \description{
 Add selected symbol to page
+}
+\examples{
+insert.Symbol.Raw("sample copied")sym(sample copied)
+insert.Symbol.Raw("rpkg.net","a")
 }
