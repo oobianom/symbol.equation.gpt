@@ -14,9 +14,10 @@
 
   # library calls
   require(shiny, quietly = TRUE)
-  require(symbols.equations.ui, quietly = TRUE)
+  require(symbol.equation.ui, quietly = TRUE)
   require(nextGenShinyApps, quietly = TRUE)
   require(r2symbols, quietly = TRUE)
+  require(shinyStorePlus, quietly = TRUE)
 
   # declare viewer
   shiny::paneViewer(500) -> viewer
@@ -44,9 +45,10 @@
 
   # library calls
   require(shiny, quietly = TRUE)
-  require(symbols.equations.ui, quietly = TRUE)
+  require(symbol.equation.ui, quietly = TRUE)
   require(nextGenShinyApps, quietly = TRUE)
   require(r2symbols, quietly = TRUE)
+  require(shinyStorePlus, quietly = TRUE)
 
   # declare viewer
   shiny::dialogViewer(dialogName = "Symbols and Equations Builder", width = 850, height = 750) -> viewer

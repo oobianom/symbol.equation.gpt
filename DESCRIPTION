@@ -1,4 +1,4 @@
-Package: symbols.equations.ui
+Package: symbol.equation.ui
 Type: Package
 Title: User Interface for Symbols and Building Equations
 Version: 1.1.1
@@ -17,7 +17,8 @@ Imports:
     jsonlite,
     shiny,
     nextGenShinyApps,
-    r2symbols
+    r2symbols,
+    shinyStorePlus
 Suggests: 
     rmarkdown,
     knitr

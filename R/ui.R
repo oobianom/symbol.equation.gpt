@@ -5,13 +5,13 @@
 #' @export
 #'
 
-lib.loc <- function() file.path(find.package(package = "symbols.equations.ui"), "lib")
+lib.loc <- function() file.path(find.package(package = "symbol.equation.ui"), "lib")
 
 
 
-#' UI
+#' App User Interface
 #'
-#' Assembles UI
+#' Assembles UI for the application
 #'
 #' @export
 #'
@@ -20,6 +20,9 @@ lib.loc <- function() file.path(find.package(package = "symbols.equations.ui"), 
 (nextGenShinyApps::fluidPage(
   # Theme: Select color style from 1-13
   style = "4",
+
+  # initialize shinyStorePlus
+  shinyStorePlus::initStore(),
 
   # set background color
   custom.bg.color = "#f5f5f5",
@@ -42,7 +45,7 @@ lib.loc <- function() file.path(find.package(package = "symbols.equations.ui"), 
     shiny::conditionalPanel(
       condition = "input.symbolseqnuicopyinsert == '2'",
       shiny::div(
-        shiny::selectInput("symbolseqnuiinserttype", "Insert Type", choices = c("Rmd or Shiny: Insert Code"="a", "Rmd: Insert Code with R chunk"="b","Rmd: Insert Shorthand Code"="c")),
+        shiny::selectInput("symbolseqnuiinserttype", "Insert Type", choices = c("Rmd or Shiny: Insert Code"="a", "Rmd: Insert Code with R chunk"="b","Rmd: Insert Shorthand Code"="c","Rmd: Insert Shorthand Code v2"="d")),
         class = "pl-2"
       )
     ),
@@ -52,12 +55,11 @@ lib.loc <- function() file.path(find.package(package = "symbols.equations.ui"), 
   nextGenShinyApps::tabsetPanel(
 
     tab0,
-    tab3,
     tab2,
+    tab3,
     tab1,
     tab4,
     tab6,
-    tab5,
     type = "pills",
     position = "right",
     justified = FALSE

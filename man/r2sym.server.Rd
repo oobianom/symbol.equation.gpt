@@ -2,10 +2,23 @@
 % Please edit documentation in R/server.R
 \name{r2sym.server}
 \alias{r2sym.server}
-\title{Server}
+\title{User Interface Server}
 \usage{
 r2sym.server(input, output, session)
 }
+\arguments{
+\item{input}{function input}
+
+\item{output}{function output}
+
+\item{session}{app session}
+}
 \description{
-Assembles Server
+Assembles Server function for the user interface
+}
+\examples{
+if(interactive()){
+r2sym.server()
+}
+
 }

@@ -3,7 +3,7 @@
 export(UI)
 export(UI2)
 export(insert.Symbol.Raw)
-export(insert.Symbol.Rendered)
+export(insert.copied)
 export(lib.loc)
 export(r2sym.server)
 export(r2sym.ui)

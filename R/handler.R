@@ -7,38 +7,38 @@
 #' @export
 #'
 
-insert.Symbol.Raw <- function(symbolid,type=letters[1:4]) {
-
-  type = match.arg(type)
-
-  switch (type,
+insert.Symbol.Raw <- function(symbolid, type = letters[1:4]) {
+  type <- match.arg(type)
+  print(symbolid)
+  switch(type,
     a = {
-      symbolid <- paste0("sym(",symbolid,")")
+      symbolid <- paste0("sym(", symbolid, ")")
     },
     b = {
-      symbolid <- paste0("symbol(",symbolid,")")
+      symbolid <- paste0("`r sym(", symbolid, ")`")
     },
     c = {
-      symbolid <- paste0("`",symbolid,"`")
+      symbolid <- paste0("`", symbolid, "`")
     },
     d = {
-      symbolid <- paste0("((",symbolid,"))")
+      symbolid <- paste0("((", symbolid, "))")
     }
   )
   a <- rstudioapi::getSourceEditorContext()
-  for (s in a$selection)
+  for (s in a$selection) {
     rstudioapi::insertText(location = s$range, text = sprintf("%s%s", s$text, symbolid))
+  }
 }
 
 
 
-#' Add symbol to current page
+#' Paste from clipboard
 #'
-#' Insert raw symbol to page
+#' Insert copied item from clipboard
 #'
 #' @export
 #'
-insert.Symbol.Rendered <- function(){
+insert.copied <- function() {
   symbolid <- readClipboard(raw = F)
   rstudioapi::insertText(symbolid)
 }

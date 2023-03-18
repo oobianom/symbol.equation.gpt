@@ -3,7 +3,7 @@
 \docType{data}
 \name{r2sym.ui}
 \alias{r2sym.ui}
-\title{UI}
+\title{App User Interface}
 \format{
 An object of class \code{shiny.tag} of length 3.
 }
@@ -11,6 +11,6 @@ An object of class \code{shiny.tag} of length 3.
 r2sym.ui
 }
 \description{
-Assembles UI
+Assembles UI for the application
 }
 \keyword{datasets}

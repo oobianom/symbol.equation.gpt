@@ -1,6 +1,15 @@
-#' Server
+#' User Interface Server
 #'
-#' Assembles Server
+#' Assembles Server function for the user interface
+#'
+#' @param input function input
+#' @param output function output
+#' @param session app session
+#'
+#' @examples
+#' if(interactive()){
+#' r2sym.server()
+#' }
 #'
 #' @export
 #'
@@ -25,11 +34,13 @@
     priority = 3
   )
 
+  # app close button
   observeEvent(input$closeapp, {
     print("Symbols dashboard v1.2")
     shiny::stopApp()
   })
 
-  # Include all the libraries and clear the console
-  cat("\014")
+  # save inputs
+  appid <- "symbolsui2"
+  shinyStorePlus::setupStorage(appId = appid, inputs = TRUE)
 }) -> r2sym.server
