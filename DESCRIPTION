@@ -1,6 +1,6 @@
 Package: symbol.equation.ui
 Type: Package
-Title: User Interface for Symbols and Building Equations
+Title: Powerful User Interface to Build and Insert Symbols and Mathematical Equations into 'Rmarkdown' or 'Quarto' or 'Shiny'
 Version: 1.1.1
 Authors@R: c(
     person("Obinna", "Obianom", email = "idonshayo@gmail.com", role = c("aut", "cre")))
@@ -14,7 +14,6 @@ Depends:
 Imports: 
     utils,
     htmltools,
-    jsonlite,
     shiny,
     nextGenShinyApps,
     r2symbols,

@@ -1,3 +1,3 @@
-# Hello
+# The power of the symbol.equation.ui R package
 
-## This is the instruction document
+Easy to use user interface for building markdown and shiny documents.
