@@ -20,12 +20,12 @@ lib.loc <- function() file.path(find.package(package = "symbol.equation.ui"), "l
 #' @return HTML for user interface container for the builder
 #'
 #' @examples
-#' r2sym.ui
+#' r2sym.ui()
 #' @export
 #'
 
 
-(nextGenShinyApps::fluidPage(
+(function(){nextGenShinyApps::fluidPage(
   # Theme: Select color style from 1-13
   style = "4",
 
@@ -72,4 +72,5 @@ lib.loc <- function() file.path(find.package(package = "symbol.equation.ui"), "l
     position = "right",
     justified = FALSE
   )
-)) -> r2sym.ui
+)
+})-> r2sym.ui

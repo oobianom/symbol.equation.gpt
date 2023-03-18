@@ -39,14 +39,14 @@ library("symbol.equation.ui")
 
 # Launch 2: from console
 
-symbol.equation.UI()
+symbol.equation.ui()
 
 # Launch 3: from console
 
-symbol.equation.UI2()
+symbol.equation.ui2()
 
 ```
-
+🤥🤣αβ
 
 # Use on the Web
 

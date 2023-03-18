@@ -5,7 +5,7 @@
 #' @return user interface for the builder
 #'
 #' @examples
-#' symbol.equation.UI()
+#' symbol.equation.ui()
 #' @export
 #'
 
@@ -27,10 +27,10 @@
   shiny::paneViewer(500) -> viewer
 
   # run the app
-  shiny::runGadget(r2sym.ui, r2sym.server, viewer = viewer)
+  shiny::runGadget(r2sym.ui(), r2sym.server, viewer = viewer)
 
 
-}) -> symbol.equation.UI
+}) -> symbol.equation.ui
 
 
 #' Main Widget Helper for symbols viewer2
@@ -40,7 +40,7 @@
 #' @return user interface for the builder in modal
 #'
 #' @examples
-#' symbol.equation.UI2()
+#' symbol.equation.ui2()
 #' @export
 #'
 
@@ -62,7 +62,7 @@
   shiny::dialogViewer(dialogName = "Symbols and Equations Builder", width = 850, height = 750) -> viewer
 
   # run the app
-  shiny::runGadget(r2sym.ui, r2sym.server, viewer = viewer)
+  shiny::runGadget(r2sym.ui(), r2sym.server, viewer = viewer)
 
 
-}) -> symbol.equation.UI2
+}) -> symbol.equation.ui2
