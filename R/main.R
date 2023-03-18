@@ -26,7 +26,7 @@
   shiny::runGadget(r2sym.ui, r2sym.server, viewer = viewer)
 
 
-}) -> UI
+}) -> symbol.equation.UI
 
 
 #' Main Widget Helper for symbols viewer2
@@ -57,4 +57,4 @@
   shiny::runGadget(r2sym.ui, r2sym.server, viewer = viewer)
 
 
-}) -> UI2
+}) -> symbol.equation.UI2
