@@ -18,8 +18,10 @@ pastes copied symbol code into document
 Add selected symbol to page
 }
 \examples{
+\dontrun{
 if(interactive()){
 insert.Symbol.Raw("sample copied")
 insert.Symbol.Raw("rpkg.net","a")
+}
 }
 }
