@@ -7,7 +7,7 @@
 #' @return pastes copied symbol code into document
 #'
 #' @examples
-#' insert.Symbol.Raw("sample copied")sym(sample copied)
+#' insert.Symbol.Raw("sample copied")
 #' insert.Symbol.Raw("rpkg.net","a")
 #' @export
 #'
