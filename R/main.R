@@ -6,7 +6,9 @@
 #'
 #' @examples
 #' \dontrun{
+#' if(interactive()){
 #' symbol.equation.ui()
+#' }
 #' }
 #' @export
 #'
@@ -38,7 +40,9 @@
 #'
 #' @examples
 #' \dontrun{
+#' if(interactive()){
 #' symbol.equation.ui2()
+#' }
 #' }
 #' @export
 #'
