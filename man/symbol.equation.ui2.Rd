@@ -13,5 +13,7 @@ user interface for the builder in modal
 Assembles the interface for the symbols builder
 }
 \examples{
+\dontrun{
 symbol.equation.ui2()
+}
 }
