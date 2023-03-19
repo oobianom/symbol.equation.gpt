@@ -1,3 +1,6 @@
-# The power of the symbol.equation.ui R package
+# Welcome to symbols and equations!
 
-Easy to use user interface for building markdown and shiny documents.
+## This is a powerful user interface to build equations and insert symbols in R documents such as Rmarkdown or Quarto or Shiny applications.
+
+### Easily include by copy and paste into your documents
+ 
