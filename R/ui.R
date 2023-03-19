@@ -5,12 +5,12 @@
 #' @return library location
 #'
 #' @examples
-#' lib.loc()
+#' lib.loc1()
 #' @export
 #'
 
 (function()
-  file.path(find.package(package = "symbol.equation.ui"), "lib")) -> lib.loc
+  file.path(find.package(package = "symbol.equation.ui"), "lib")) -> lib.loc1
 
 
 
