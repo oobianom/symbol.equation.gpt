@@ -7,9 +7,11 @@
 #' @return pastes copied symbol code into document
 #'
 #' @examples
+#' \dontrun{
 #' if(interactive()){
 #' insert.Symbol.Raw("sample copied")
 #' insert.Symbol.Raw("rpkg.net","a")
+#' }
 #' }
 #' @export
 #'
