@@ -1,19 +1,3 @@
-#' Library path loader
-#'
-#' Load library path for package
-#'
-#' @return library location
-#'
-#' @examples
-#' lib.loc1()
-#' @export
-#'
-
-(function()
-  file.path(find.package(package = "symbol.equation.gpt"), "lib")) -> lib.loc1
-
-
-
 #' App User Interface
 #'
 #' Assembles UI for the application
