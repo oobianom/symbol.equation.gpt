@@ -39,11 +39,11 @@ Go to the "Addins" in RStudio and click on the "Symbols and Equations" to launch
 
 # Launch 2: from console
 
-symbol.equation.ui()
+`symbol.equation.ui()`
 
 # Launch 3: from console
 
-symbol.equation.ui2()
+`symbol.equation.ui2()`
 
 
 ## Examples and Demo Pages
