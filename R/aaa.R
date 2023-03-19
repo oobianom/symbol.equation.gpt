@@ -31,8 +31,20 @@
 
 }) -> envir.prep
 
-# library
-library(shiny, quietly = TRUE)
-library(nextGenShinyApps, quietly = TRUE)
-library(r2symbols, quietly = TRUE)
-library(shinyStorePlus, quietly = TRUE)
+
+#' @import utils
+#' @import shiny
+#' @import r2symbols
+#' @import shinyStorePlus
+#'
+
+.onLoad <- function(libname, pkgname){
+
+}
+
+
+.onAttach <- function(libname, pkgname){
+
+}
+
+utils::globalVariables(paste0(".symbol.equation.gpt.",c("ui","server")))
