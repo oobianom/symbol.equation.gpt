@@ -5,7 +5,9 @@
 #' @return user interface for the builder
 #'
 #' @examples
+#' \dontrun{
 #' symbol.equation.ui()
+#' }
 #' @export
 #'
 
@@ -16,11 +18,7 @@
   closeAllConnections()
 
   # library calls
-  require(shiny, quietly = TRUE)
-  require(symbol.equation.gpt, quietly = TRUE)
-  require(nextGenShinyApps, quietly = TRUE)
-  require(r2symbols, quietly = TRUE)
-  require(shinyStorePlus, quietly = TRUE)
+  env.init <- envir.prep()
 
   # declare viewer
   shiny::paneViewer(500) -> viewer
@@ -39,7 +37,9 @@
 #' @return user interface for the builder in modal
 #'
 #' @examples
+#' \dontrun{
 #' symbol.equation.ui2()
+#' }
 #' @export
 #'
 
@@ -50,11 +50,7 @@
   closeAllConnections()
 
   # library calls
-  require(shiny, quietly = TRUE)
-  require(symbol.equation.gpt, quietly = TRUE)
-  require(nextGenShinyApps, quietly = TRUE)
-  require(r2symbols, quietly = TRUE)
-  require(shinyStorePlus, quietly = TRUE)
+  env.init <- envir.prep()
 
   # declare viewer
   shiny::dialogViewer(dialogName = "Symbols and Equations Builder",
