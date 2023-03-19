@@ -1,4 +1,4 @@
-Package: symbol.equation.ui
+Package: symbol.equation.gpt
 Type: Package
 Title: Powerful User Interface to Build and Insert Symbols and Mathematical Equations into 'Rmarkdown' or 'Quarto' or 'Shiny'
 Version: 1.1.1

@@ -1,4 +1,4 @@
-# symbol.equation.ui 1.1.1
+# symbol.equation.gpt 1.1.1
 
 ## Features
 

@@ -10,7 +10,7 @@
 #'
 
 (function()
-  file.path(find.package(package = "symbol.equation.ui"), "lib")) -> lib.loc1
+  file.path(find.package(package = "symbol.equation.gpt"), "lib")) -> lib.loc1
 
 
 
