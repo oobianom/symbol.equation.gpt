@@ -17,7 +17,7 @@
 
   # library calls
   require(shiny, quietly = TRUE)
-  require(symbol.equation.ui, quietly = TRUE)
+  require(symbol.equation.gpt, quietly = TRUE)
   require(nextGenShinyApps, quietly = TRUE)
   require(r2symbols, quietly = TRUE)
   require(shinyStorePlus, quietly = TRUE)
@@ -51,7 +51,7 @@
 
   # library calls
   require(shiny, quietly = TRUE)
-  require(symbol.equation.ui, quietly = TRUE)
+  require(symbol.equation.gpt, quietly = TRUE)
   require(nextGenShinyApps, quietly = TRUE)
   require(r2symbols, quietly = TRUE)
   require(shinyStorePlus, quietly = TRUE)
