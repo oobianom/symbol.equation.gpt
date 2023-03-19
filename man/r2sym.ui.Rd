@@ -13,5 +13,9 @@ HTML for user interface container for the builder
 Assembles UI for the application
 }
 \examples{
+\dontrun{
+if(interactive()){
 r2sym.ui()
+}
+}
 }

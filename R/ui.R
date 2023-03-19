@@ -21,7 +21,11 @@
 #' @return HTML for user interface container for the builder
 #'
 #' @examples
+#' \dontrun{
+#' if(interactive()){
 #' r2sym.ui()
+#' }
+#' }
 #' @export
 #'
 

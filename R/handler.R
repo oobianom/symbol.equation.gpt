@@ -77,7 +77,7 @@
       type = "pills",
       justified = FALSE
     )
-  )
+  )-> tab2
 nextGenShinyApps::tabPanel("Symbol", shiny::div(
   r2symbols::symCat(
     category = "symbol",
