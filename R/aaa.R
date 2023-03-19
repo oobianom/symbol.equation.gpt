@@ -22,5 +22,8 @@
   file.path(find.package(package = "symbol.equation.gpt"), "lib")
 }) -> envir.prep
 
-
-
+# library
+library(shiny, quietly = TRUE)
+library(nextGenShinyApps, quietly = TRUE)
+library(r2symbols, quietly = TRUE)
+library(shinyStorePlus, quietly = TRUE)
