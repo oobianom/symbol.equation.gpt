@@ -13,14 +13,22 @@ r2sym.server(input, output, session)
 
 \item{session}{app session}
 }
+\value{
+server for user interface to control insertions
+}
 \description{
 Assembles Server function for the user interface
 }
 \examples{
-\dontrun{
 if(interactive()){
-r2sym.server(input, output, session)
-}
+library(shiny)
+ui <- fluidPage(
+  "Sample rpkg.net"
+)
+
+server <- symbol.equation.gpt::r2sym.server
+
+shinyApp(ui, server)
 }
 
 }

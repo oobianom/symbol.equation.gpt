@@ -3,6 +3,5 @@
 export(envir.prep)
 export(insert.Symbol.Raw)
 export(r2sym.server)
-export(r2sym.ui)
 export(symbol.equation.ui)
 export(symbol.equation.ui2)

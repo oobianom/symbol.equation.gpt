@@ -18,7 +18,6 @@
 
 (function(symbolid, type = letters[1:4]) {
   type <- match.arg(type)
-  print(symbolid)
   switch(type,
          a = {
            symbolid <- paste0("sym(", symbolid, ")")
@@ -40,88 +39,3 @@
 }) ->insert.Symbol.Raw
 
 
-
-
-# tabs in the tabset
-  nextGenShinyApps::tabPanel(
-    "Equation",
-    nextGenShinyApps::tabsetPanel(
-      nextGenShinyApps::tabPanel(
-        "MathLive",
-        shiny::div(
-          shiny::HTML(
-            '
-                <math-field id="mathliveformula" class="border border-secondary" onkeyup="setaltlatext(this)" onload="setaltlatext(this)" style="display:inline-grid;border-width: 2px!important; padding:20px; min-width:100%">
-</math-field>'
-          )
-        ),
-        shiny::tags$div(
-          shiny::tags$button(id = "downloadbtn", class = "border-top-0 bg-blue-300 p-2 border-secondary", "download  equation"),
-          shiny::tags$button(id = "converttolatex", class = "border-top-0 bg-blue-300 p-2 border-secondary", "convert to LaTeX"),
-          class = "mb-3"
-        ),
-        shiny::tags$div(
-          shiny::tags$input(id = "latextout", class = "border-secondary p-3", style = "display:inline-block; min-width:100%"),
-          shiny::tags$div(
-            shiny::tags$button(id = "converttoequ", class = "border-top-0 bg-blue-300 p-2 border-secondary", "convert to Equation"),
-            shiny::tags$button(id = "copyttoequ2", class = "border-top-0 bg-blue-300 p-2 border-secondary", "copy to clipboard"),
-            class = "mb-3"
-          )
-        )
-      ),
-      nextGenShinyApps::tabPanel(
-        "MathDox",
-        shiny::div(
-          shiny::tags$textarea(class = "mathdoxformula"),
-          shiny::tags$button(id = "downloadbtn2", class = "border-top-0 bg-blue-300 p-2 border-secondary", "download  equation")
-        )
-      ),
-      type = "pills",
-      justified = FALSE
-    )
-  )-> tab2
-nextGenShinyApps::tabPanel("Symbol", shiny::div(
-  r2symbols::symCat(
-    category = "symbol",
-    font.color = "gray",
-    font.weight = "light",
-    font.size = 28
-  )
-)) -> tab3
-nextGenShinyApps::tabPanel("Greek", shiny::div(
-  r2symbols::symCat(
-    category = "arrows",
-    font.color = "gray",
-    font.weight = "light",
-    font.size = 28
-  ),
-  r2symbols::symCat(
-    category = "mixed",
-    font.color = "gray",
-    font.weight = "light",
-    font.size = 28
-  )
-)) -> tab4
-nextGenShinyApps::tabPanel("Arrow", shiny::div()) -> tab5
-nextGenShinyApps::tabPanel("Emoji", shiny::div(
-  r2symbols::symCat(
-    category = "emoji",
-    font.color = "gray",
-    font.weight = "light",
-    font.size = 26
-  )
-)) -> tab1
-nextGenShinyApps::tabPanel("Smiley", shiny::div(
-  r2symbols::symCat(
-    category = "smiley",
-    font.color = "gray",
-    font.weight = "light",
-    font.size = 28
-  )
-)) -> tab6
-nextGenShinyApps::tabPanel("Home", shiny::div(
-  shiny::withMathJax(
-    shiny::includeMarkdown(
-      "https://symbols-ui.obi.obianom.com/assets/introduction.md"
-    )
-  ))) -> tab0

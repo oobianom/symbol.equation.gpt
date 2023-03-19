@@ -13,5 +13,7 @@ library location
 Initialize and load library path for package
 }
 \examples{
+if(interactive()){
 envir.prep()
+}
 }

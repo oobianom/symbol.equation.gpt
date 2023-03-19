@@ -24,7 +24,7 @@
   shiny::paneViewer(500) -> viewer
 
   # run the app
-  shiny::runGadget(r2sym.ui(), r2sym.server, viewer = viewer)
+  shiny::runGadget(.symbol.equation.gpt.ui, r2sym.server, viewer = viewer)
 
 
 }) -> symbol.equation.ui
@@ -58,7 +58,7 @@
                       height = 750) -> viewer
 
   # run the app
-  shiny::runGadget(r2sym.ui(), r2sym.server, viewer = viewer)
+  shiny::runGadget(.symbol.equation.gpt.ui, r2sym.server, viewer = viewer)
 
 
 }) -> symbol.equation.ui2

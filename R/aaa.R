@@ -5,7 +5,9 @@
 #' @return library location
 #'
 #' @examples
+#' if(interactive()){
 #' envir.prep()
+#' }
 #' @export
 #'
 
@@ -19,7 +21,14 @@
   require(shinyStorePlus, quietly = TRUE)
 
   # return lib
-  file.path(find.package(package = "symbol.equation.gpt"), "lib")
+  file.path(find.package(package = "symbol.equation.gpt"), "lib") -> lib.loc
+
+  # load required
+  load(file = file.path(lib.loc,"req_pack.ob"), envir = .GlobalEnv)
+
+  # return
+  lib.loc
+
 }) -> envir.prep
 
 # library
