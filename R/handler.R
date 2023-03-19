@@ -100,26 +100,26 @@ nextGenShinyApps::tabPanel("Greek", shiny::div(
     font.size = 28
   )
 )) -> tab4
-tab5 <- nextGenShinyApps::tabPanel("Arrow", shiny::div())
-tab1 <- nextGenShinyApps::tabPanel("Emoji", shiny::div(
+nextGenShinyApps::tabPanel("Arrow", shiny::div()) -> tab5
+nextGenShinyApps::tabPanel("Emoji", shiny::div(
   r2symbols::symCat(
     category = "emoji",
     font.color = "gray",
     font.weight = "light",
     font.size = 26
   )
-))
-tab6 <- nextGenShinyApps::tabPanel("Smiley", shiny::div(
+)) -> tab1
+nextGenShinyApps::tabPanel("Smiley", shiny::div(
   r2symbols::symCat(
     category = "smiley",
     font.color = "gray",
     font.weight = "light",
     font.size = 28
   )
-))
-tab0 <- nextGenShinyApps::tabPanel("Home", shiny::div(# shiny::withMathJax(shiny::includeMarkdown(file.path(lib.loc(),"introduction.md")))
+)) -> tab6
+nextGenShinyApps::tabPanel("Home", shiny::div(
   shiny::withMathJax(
     shiny::includeMarkdown(
       "https://symbols-ui.obi.obianom.com/assets/introduction.md"
     )
-  )))
+  ))) -> tab0

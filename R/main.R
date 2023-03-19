@@ -9,11 +9,10 @@
 #' @export
 #'
 
-(function(){
-
+(function() {
   # prior to starting app, clear console and environment
   cat("\014")
-  rm(list=ls())
+  rm(list = ls())
   closeAllConnections()
 
   # library calls
@@ -44,11 +43,10 @@
 #' @export
 #'
 
-(function(){
-
+(function() {
   # prior to starting app, clear console and environment
   cat("\014")
-  rm(list=ls())
+  rm(list = ls())
   closeAllConnections()
 
   # library calls
@@ -59,7 +57,9 @@
   require(shinyStorePlus, quietly = TRUE)
 
   # declare viewer
-  shiny::dialogViewer(dialogName = "Symbols and Equations Builder", width = 850, height = 750) -> viewer
+  shiny::dialogViewer(dialogName = "Symbols and Equations Builder",
+                      width = 850,
+                      height = 750) -> viewer
 
   # run the app
   shiny::runGadget(r2sym.ui(), r2sym.server, viewer = viewer)
