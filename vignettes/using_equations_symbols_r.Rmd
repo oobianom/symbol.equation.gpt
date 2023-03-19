@@ -1,10 +1,10 @@
 ---
-title: "Using symbols and equations in R with the powerful symbol.equation.ui R package"
+title: "Using symbols and equations in R with the powerful symbol.equation.gpt R package"
 author: "Obinna N. Obianom"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Using symbols and equations in R with the powerful symbol.equation.ui R package}
+  %\VignetteIndexEntry{Using symbols and equations in R with the powerful symbol.equation.gpt R package}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -17,20 +17,20 @@ knitr::opts_chunk$set(
 
 ## Introduction
 
-symbol.equation.ui is a package that provides a user interface for building and inserting equations or symbols within R
+symbol.equation.gpt is a package that provides a user interface for building and inserting equations or symbols within R
 
 ![](https://symbols-ui.obi.obianom.com/assets/equationrpkg1.png)
 
 
 ## Installation and Library Attachment
 
-The symbol.equation.ui package is available on CRAN and can be installed as shown below
+The symbol.equation.gpt package is available on CRAN and can be installed as shown below
 
-`install.packages(symbol.equation.ui)`
+`install.packages(symbol.equation.gpt)`
 
 Attach library 
 
-`library(symbol.equation.ui)`
+`library(symbol.equation.gpt)`
 
 ## Use
 
