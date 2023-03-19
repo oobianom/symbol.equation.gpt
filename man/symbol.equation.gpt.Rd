@@ -12,7 +12,7 @@ User Interface for adding symbols, smileys, arrows, building equations using 'La
 Useful links:
 \itemize{
   \item \url{https://symbols-ui.obi.obianom.com/}
-  \item Report bugs at \url{https://github.com/oobianom/r2symbols.ui/issues/}
+  \item Report bugs at \url{https://github.com/oobianom/symbol.equation.gpt/issues/}
 }
 
 }

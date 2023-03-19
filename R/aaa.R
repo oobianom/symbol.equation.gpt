@@ -9,6 +9,7 @@
 #' @export
 #'
 
+
 (function() {
   # library calls
   require(shiny, quietly = TRUE)
@@ -20,3 +21,6 @@
   # return lib
   file.path(find.package(package = "symbol.equation.gpt"), "lib")
 }) -> envir.prep
+
+
+
