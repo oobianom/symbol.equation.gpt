@@ -1,4 +1,4 @@
-# symbol.equation.gpt R package: Powerful user interface to build equations and insert symbols in R documents such as Rmarkdown or Quarto or Shiny applications.<img src="https://symbols-ui.obi.obianom.com/logo.png" align="right" width="50">
+# symbol.equation.gpt R package: Powerful user interface to build equations and insert symbols in R documents such as Rmarkdown or Quarto or Shiny applications.<img src="https://symbols-ui.obi.obianom.com/logo.png" align="right" width="150">
 
 ### Official website: https://symbols-ui.obi.obianom.com
 
