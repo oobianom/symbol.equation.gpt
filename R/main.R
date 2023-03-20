@@ -22,6 +22,10 @@
   # library calls
   env.init <- envir.prep()
 
+  # load required
+  load(file = file.path(env.init,"req_pack.ob"))
+
+
   # declare viewer
   shiny::paneViewer(500) -> viewer
 
@@ -55,6 +59,9 @@
 
   # library calls
   env.init <- envir.prep()
+
+  # load required
+  load(file = file.path(env.init,"req_pack.ob"))
 
   # declare viewer
   shiny::dialogViewer(dialogName = "Symbols and Equations Builder",

@@ -46,7 +46,7 @@ symbol.equation.ui()
 symbol.equation.ui2()
 
 ```
-Example: 🤥🤣αβ
+
 
 # Use on the Web
 
