@@ -4,7 +4,16 @@
 
 [![CRAN\_Status\_Badge](https://img.shields.io/badge/RPKG-published-orange)](https://rnetwork.obi.obianom.com/package/symbol.equation.gpt) <img src="https://rpkg.net/pub-age/symbol.equation.gpt"> [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/symbol.equation.gpt)](https://cran.r-project.org/package=symbol.equation.gpt) [![](https://cranlogs.r-pkg.org/badges/symbol.equation.gpt)](https://cran.r-project.org/package=symbol.equation.gpt) [![](https://cranlogs.r-pkg.org/badges/grand-total/symbol.equation.gpt)](https://cran.r-project.org/package=symbol.equation.gpt)
 
-### install.packages("symbol.equation.gpt")
+### `install.packages("symbol.equation.gpt")`
+
+
+#### Live sample 1
+
+![](https://symbols-ui.obi.obianom.com/vids/SYMBOLS.EQUATIONS.OPEN3.gif)
+
+#### Live sample 2
+
+![](https://symbols-ui.obi.obianom.com/vids/SYMBOLS.EQUATIONS.OPEN2.gif)
 
 
 ### Launch User Interface from RStudio Addins
