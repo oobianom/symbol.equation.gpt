@@ -65,29 +65,3 @@
 
 
 }) -> symbol.equation.ui2
-
-
-
-
-(function(input, output, session) {
-  shiny::observe({
-    if (!is.null(input$transmittedSymbol0x)) {
-      symidcomb <- strsplit(input$transmittedSymbol0x, "--")[[1]]
-      symid <- as.numeric(symidcomb[1])
-
-      if (symid > 0) {
-        insert.Symbol.Raw(symid, type = symidcomb[2])
-      }
-    }
-  },
-  priority = 3)
-
-  # app close button
-  observeEvent(input$closeapp, {
-    shiny::stopApp()
-  })
-
-  # save inputs
-  appid <- "rpkgsymbolsui255"
-  shinyStorePlus::setupStorage(appId = appid, inputs = TRUE)
-}) -> .symbol.equation.gpt.server
