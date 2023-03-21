@@ -13,9 +13,7 @@ user interface for the builder
 Assembles the interface for the symbols builder
 }
 \examples{
-\dontrun{
 if(interactive()){
 symbol.equation.ui()
-}
 }
 }

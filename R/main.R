@@ -5,18 +5,14 @@
 #' @return user interface for the builder
 #'
 #' @examples
-#' \dontrun{
 #' if(interactive()){
 #' symbol.equation.ui()
-#' }
 #' }
 #' @export
 #'
 
 (function() {
-  # prior to starting app, clear console and environment
-  cat("\014")
-  rm(list = ls())
+  # prior to starting app, close open connections
   closeAllConnections()
 
   # library calls
@@ -43,18 +39,14 @@
 #' @return user interface for the builder in modal
 #'
 #' @examples
-#' \dontrun{
 #' if(interactive()){
 #' symbol.equation.ui2()
-#' }
 #' }
 #' @export
 #'
 
 (function() {
-  # prior to starting app, clear console and environment
-  cat("\014")
-  rm(list = ls())
+  # prior to starting app, close open connections
   closeAllConnections()
 
   # library calls

@@ -1,11 +1,11 @@
 Package: symbol.equation.gpt
 Type: Package
-Title: Powerful User Interface to Build and Insert Symbols and Mathematical Equations into 'Rmarkdown' or 'Quarto' or 'Shiny'
+Title: Powerful User Interface to Build and Insert Symbols and Equations
 Version: 1.1.1
 Authors@R: c(
     person("Obinna", "Obianom", email = "idonshayo@gmail.com", role = c("aut", "cre")))
 Maintainer: Obinna Obianom <idonshayo@gmail.com>
-Description: User Interface for adding symbols, smileys, arrows, building equations using 'LaTeX' or 'r2symbols'. Built for use in development of 'Markdown' and 'Shiny' Outputs.
+Description: User Interface for adding symbols, smileys, arrows, building mathematical equations using 'LaTeX' or 'r2symbols'. Built for use in development of 'Markdown' and 'Shiny' Outputs.
 License: MIT + file LICENSE
 URL: https://symbols-ui.obi.obianom.com/
 BugReports: https://github.com/oobianom/symbol.equation.gpt/issues/
