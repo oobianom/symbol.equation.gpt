@@ -7,8 +7,8 @@ Authors@R: c(
 Maintainer: Obinna Obianom <idonshayo@gmail.com>
 Description: User Interface for adding symbols, smileys, arrows, building mathematical equations using 'LaTeX' or 'r2symbols'. Built for use in development of 'Markdown' and 'Shiny' Outputs.
 License: MIT + file LICENSE
-URL: https://symbols-ui.obi.obianom.com/
-BugReports: https://github.com/oobianom/symbol.equation.gpt/issues/
+URL: https://symbols-ui.obi.obianom.com
+BugReports: https://github.com/oobianom/symbol.equation.gpt/issues
 Depends: 
     R (>= 3.6)
 Imports: 
