@@ -2,7 +2,7 @@
 
 ### Official website: https://symbols-ui.obi.obianom.com
 
-[![CRAN\_Status\_Badge](https://img.shields.io/badge/RPKG-published-orange)](https://rnetwork.obi.obianom.com/package/symbol.equation.gpt) <img src="https://rpkg.net/pub-age/symbol.equation.gpt"> [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/symbol.equation.gpt)](https://cran.r-project.org/package=symbol.equation.gpt) [![](https://cranlogs.r-pkg.org/badges/symbol.equation.gpt)](https://cran.r-project.org/package=symbol.equation.gpt) [![](https://cranlogs.r-pkg.org/badges/grand-total/symbol.equation.gpt)](https://cran.r-project.org/package=symbol.equation.gpt)
+[![CRAN\_Status\_Badge](https://img.shields.io/badge/RPKG-published-orange)](https://rnetwork.obi.obianom.com/package/symbol.equation.gpt) <img src="https://rpkg.net/pub-age/symbol.equation.gpt"> [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/symbol.equation.gpt)](https://cran.r-project.org/package=symbol.equation.gpt) [![](https://cranlogs.r-pkg.org/badges/symbol.equation.gpt)](https://cran.r-project.org/package=symbol.equation.gpt) [![](https://cranlogs.r-pkg.org/badges/grand-total/symbol.equation.gpt)](https://cran.r-project.org/package=symbol.equation.gpt)[![RPKG\_Status\_Badge](![r2social pkg](https://rpkg.net/rpkg/symbol.equation.gpt/green))](https://rpkg.net/package/symbol.equation.gpt)
 
 ### `install.packages("symbol.equation.gpt")`
 
