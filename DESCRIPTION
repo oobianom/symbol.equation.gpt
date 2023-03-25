@@ -1,7 +1,7 @@
 Package: symbol.equation.gpt
 Type: Package
 Title: Powerful User Interface to Build and Insert Symbols and Equations
-Version: 1.1.1
+Version: 0.99.0
 Authors@R: c(
     person("Obinna", "Obianom", email = "idonshayo@gmail.com", role = c("aut", "cre")))
 Maintainer: Obinna Obianom <idonshayo@gmail.com>
