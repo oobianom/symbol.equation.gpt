@@ -7,8 +7,29 @@
 [![CRAN\_Status\_Badge](https://img.shields.io/badge/RPKG-published-orange)](https://rnetwork.obi.obianom.com/package/symbol.equation.gpt) <img src="https://rpkg.net/pub-age/symbol.equation.gpt"> [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/symbol.equation.gpt)](https://cran.r-project.org/package=symbol.equation.gpt) [![](https://cranlogs.r-pkg.org/badges/symbol.equation.gpt)](https://cran.r-project.org/package=symbol.equation.gpt) [![](https://cranlogs.r-pkg.org/badges/grand-total/symbol.equation.gpt)](https://cran.r-project.org/package=symbol.equation.gpt)
 ![symbol.equation.gpt pkg](https://rpkg.net/rpkg/symbol.equation.gpt/green)
 
-### `install.packages("symbol.equation.gpt")`
 
+## Quick example in R 
+
+First, install and load...
+
+```
+install.packages("symbol.equation.gpt")
+
+library("symbol.equation.gpt")
+
+# Launch 1: from Addins
+
+# Go to "Addins" in RStudio, and click on "Symbols and Equations"
+
+# Launch 2: from console
+
+symbol.equation.ui()
+
+# Launch 3: from console
+
+symbol.equation.ui2()
+
+```
 
 #### Live sample 1
 
@@ -36,28 +57,7 @@
 
 
 
-# Quick example in R 
 
-First, install and load...
-
-```
-install.packages("symbol.equation.gpt")
-
-library("symbol.equation.gpt")
-
-# Launch 1: from Addins
-
-# Go to "Addins" in RStudio, and click on "Symbols and Equations"
-
-# Launch 2: from console
-
-symbol.equation.ui()
-
-# Launch 3: from console
-
-symbol.equation.ui2()
-
-```
 
 
 # Use on the Web
