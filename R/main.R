@@ -77,7 +77,6 @@
                       width = 850,
                       height = 750) -> viewer
   }else{
-    # declare viewer
     shiny::paneViewer(700) -> viewer
   }
 
