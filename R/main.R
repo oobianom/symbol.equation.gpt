@@ -60,7 +60,7 @@
 
 (function(viewer = c("pane","dialog")) {
   # get viewer option
-  match.arg(viewer) <- viewer
+  match.arg(viewer) -> viewer
 
   # prior to starting app, close open connections
   closeAllConnections()
