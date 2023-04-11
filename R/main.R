@@ -72,7 +72,7 @@
   load(file = file.path(env.init,"req_pack.ob"))
 
   # declare viewer
-  if(viewer == "pane"){
+  if(viewer == "dialog"){
     shiny::dialogViewer(dialogName = "Symbols and Equations Builder",
                       width = 850,
                       height = 750) -> viewer
