@@ -44,7 +44,7 @@
 
 #' Primary widget container
 #'
-#' Customization widget opener
+#' Customizable widget opener
 #'
 #' @param viewer viewer option to open widget
 #'
