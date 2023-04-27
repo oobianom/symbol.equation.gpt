@@ -1,3 +1,9 @@
+# symbol.equation.gpt 1.1.2
+
+## Features
+
+ - [x] Reorganization of panels and styling of boxes
+ 
 # symbol.equation.gpt 1.1.1
 
 ## Features
