@@ -3,6 +3,7 @@
 ## Features
 
  - [x] Reorganization of panels and styling of boxes
+ - [x] Reorganization of app launch functions
  
 # symbol.equation.gpt 1.1.1
 
