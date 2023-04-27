@@ -82,7 +82,7 @@
 
 
   # run the app
-  shiny::runGadget(..symbol.equation.gpt.ui, .symbol.equation.gpt.server, viewer = viewer)
+  shiny::runGadget(.symbol.equation.gpt.ui, .symbol.equation.gpt.server, viewer = viewer)
 
 
 }) -> equationSymbol.Widget
