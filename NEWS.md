@@ -1,3 +1,9 @@
+# symbol.equation.gpt 1.1.3
+
+## Features
+
+ - [x] Bug fix for launching
+ 
 # symbol.equation.gpt 1.1.2
 
 ## Features
