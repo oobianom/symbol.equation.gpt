@@ -5,7 +5,7 @@
 ### Explainer video: https://www.youtube.com/watch?v=cm6FDzO2uqI
 
 [![CRAN\_Status\_Badge](https://img.shields.io/badge/RPKG-published-orange)](https://rpkg.net/package/symbol.equation.gpt) <img src="https://rpkg.net/pub-age/symbol.equation.gpt"> [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/symbol.equation.gpt)](https://cran.r-project.org/package=symbol.equation.gpt) [![](https://cranlogs.r-pkg.org/badges/symbol.equation.gpt)](https://cran.r-project.org/package=symbol.equation.gpt) [![](https://cranlogs.r-pkg.org/badges/grand-total/symbol.equation.gpt)](https://cran.r-project.org/package=symbol.equation.gpt)
-[![symbol.equation.gpt pkg](https://rpkg.net/rpkg/symbol.equation.gpt/brown)](https://rpkg.net/package/symbol.equation.gpt)
+[![symbol.equation.gpt pkg](https://rpkg.net/rpkg/symbol.equation.gpt/yellow)](https://rpkg.net/package/symbol.equation.gpt)
 
 
 ## Quick example in R 
