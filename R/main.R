@@ -59,13 +59,31 @@
 #'
 
 (function(viewer = c("pane","dialog")) {
-  print("rendering...")
+  # get viewer option
+  match.arg(viewer) -> viewer
+
+  # prior to starting app, close open connections
+  closeAllConnections()
+
   # library calls
   env.init <- envir.prep()
 
   # load required
   load(file = file.path(env.init,"req_pack.ob"))
- shiny::shinyApp(.symbol.equation.gpt.ui, .symbol.equation.gpt.server)
+
+  # declare viewer
+  if(viewer == "dialog"){
+    shiny::dialogViewer(dialogName = "Symbols and Equations Builder",
+                      width = 850,
+                      height = 750) -> viewer
+  }else{
+    shiny::paneViewer(700) -> viewer
+  }
+
+
+  # run the app
+  shiny::runGadget(.symbol.equation.gpt.ui, .symbol.equation.gpt.server, viewer = viewer)
+
 
 }) -> equationSymbol.Widget
 
