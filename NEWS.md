@@ -3,6 +3,7 @@
 ## Features
 
  - [x] Bug fix for launching
+ - [ ] Customize your symbols
  
 # symbol.equation.gpt 1.1.2
 
